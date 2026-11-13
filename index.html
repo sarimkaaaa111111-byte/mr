@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+
+<html class="dark" lang="en"><head><meta charset="utf-8"/><meta content="width=device-width, initial-scale=1.0" name="viewport"/><meta content="web_standard" name="shell-type"/><title>PuckZone Hockey Hub</title><link href="https://fonts.googleapis.com" rel="preconnect"/><link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/><link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,600;0,700;0,800;1,700&amp;family=Plus+Jakarta+Sans:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/><link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/><style>@layer base{html,body{margin:0;padding:0;}body{overscroll-behavior:none;}main>:first-child{margin-top:0!important;}main>:last-child{margin-bottom:0!important;}}::-webkit-scrollbar{display:none;}</style><script src="https://cdn.tailwindcss.com"></script><script id="tailwind-config">tailwind.config={darkMode:"class",theme:{extend:{colors:{"primary-fixed":"#c4e7ff","on-error-container":"#ffdad6","on-tertiary-container":"#00486f","on-secondary-container":"#ffaea8","inverse-surface":"#dae2fd","inverse-on-surface":"#283044","on-primary":"#00354a","on-surface-variant":"#bdc8d1","on-secondary":"#68000a","primary-container":"#38bdf8","primary-fixed-dim":"#7bd0ff","surface-dim":"#0b1326","surface":"#0b1326","tertiary-fixed-dim":"#93ccff","on-tertiary-fixed":"#001d31","on-secondary-fixed-variant":"#930013","primary":"#8ed5ff","on-tertiary-fixed-variant":"#004b73","outline":"#87929a","tertiary-container":"#5cb9ff","on-primary-fixed":"#001e2c","surface-container-low":"#131b2e","on-primary-container":"#004965","secondary-container":"#a40217","surface-container":"#171f33","inverse-primary":"#00668a","surface-variant":"#2d3449","background":"#0b1326","surface-container-high":"#222a3d","secondary-fixed-dim":"#ffb3ad","tertiary":"#a1d2ff","secondary-fixed":"#ffdad7","on-error":"#690005","surface-tint":"#7bd0ff","on-surface":"#dae2fd","surface-bright":"#31394d","tertiary-fixed":"#cce5ff","on-background":"#dae2fd","surface-container-lowest":"#060e20","on-secondary-fixed":"#410004","on-tertiary":"#003351","on-primary-fixed-variant":"#004c69","error":"#ffb4ab","error-container":"#93000a","secondary":"#ffb3ad","outline-variant":"#3e484f","surface-container-highest":"#2d3449"},borderRadius:{"DEFAULT":"0.25rem","lg":"0.5rem","xl":"0.75rem","full":"9999px"},spacing:{"space-sm":"0.5rem","space-lg":"1.5rem","margin":"2rem","gutter":"1.5rem","space-md":"1rem","margin-mobile":"1rem","gutter-mobile":"0.75rem","space-xl":"2.5rem","space-xs":"0.25rem"},fontFamily:{"headline-lg":["Barlow Condensed"],"body-sm":["Plus Jakarta Sans"],"display-xl":["Barlow Condensed"],"body-lg":["Plus Jakarta Sans"],"headline-sm":["Barlow Condensed"],"label-md":["Barlow Condensed"],"label-lg":["Barlow Condensed"],"headline-md":["Barlow Condensed"],"headline-lg-mobile":["Barlow Condensed"],"label-sm":["Barlow Condensed"],"body-md":["Plus Jakarta Sans"],"display-xl-mobile":["Barlow Condensed"]},fontSize:{"headline-lg":["36px",{"lineHeight":"40px","letterSpacing":"0.01em","fontWeight":"700"}],"body-sm":["13px",{"lineHeight":"18px","fontWeight":"400"}],"display-xl":["56px",{"lineHeight":"60px","letterSpacing":"0.02em","fontWeight":"800"}],"body-lg":["18px",{"lineHeight":"28px","fontWeight":"400"}],"headline-sm":["20px",{"lineHeight":"24px","letterSpacing":"0.02em","fontWeight":"600"}],"label-md":["13px",{"lineHeight":"16px","letterSpacing":"0.08em","fontWeight":"700"}],"label-lg":["16px",{"lineHeight":"20px","letterSpacing":"0.06em","fontWeight":"700"}],"headline-md":["24px",{"lineHeight":"28px","letterSpacing":"0.02em","fontWeight":"700"}],"headline-lg-mobile":["28px",{"lineHeight":"32px","letterSpacing":"0.01em","fontWeight":"700"}],"label-sm":["11px",{"lineHeight":"14px","letterSpacing":"0.1em","fontWeight":"700"}],"body-md":["15px",{"lineHeight":"22px","fontWeight":"400"}],"display-xl-mobile":["40px",{"lineHeight":"44px","letterSpacing":"0.02em","fontWeight":"800"}]}}}};</script></head><body class="bg-surface text-on-surface font-body-md text-body-md min-h-screen selection:bg-primary-container selection:text-on-primary-container"><header class="fixed top-0 left-0 right-0 z-50 bg-surface-container-lowest/90 backdrop-blur-xl shadow-[0_4px_24px_rgba(0,0,0,0.35)]"><div class="h-20 w-full px-gutter flex items-center justify-between border-b border-outline-variant/30"><div class="flex items-center gap-space-lg"><a class="flex items-center gap-space-sm group" href="#"><img alt="PuckZone Logo" class="h-8 w-auto object-contain" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA71dDW2DMLtwvcCOShXA7NOmwZV0elKA7M-1NfC0LBZgmLarMvkgllOs8eFQWqare2ujwRCGe1Hi4x9QvJdUIKwzePfZNV7zNCkGb4KaQtnfeuwZO24DaD3ddKOYYhS9OA-E1WYQPSgNWUpWDlswFxAKeeEEHZ8RrQmOe59yh5sabZUBT3meX40Gzu-4512DR7ssu0Bw2rgDHoom1tvlOcRPRG9EgV9OC6s3P4eFM"/><span class="font-headline-md text-headline-md tracking-wider uppercase text-on-surface group-hover:text-primary transition-colors">PUCK<span class="text-primary-container">ZONE</span></span></a><nav class="hidden xl:flex items-center gap-space-md ml-space-md" data-active-classes="text-primary font-headline-sm text-headline-sm border-b-2 border-primary-container drop-shadow-[0_0_12px_rgba(56,189,248,0.5)]"><a aria-current="page" class="px-space-sm py-space-xs uppercase tracking-wider transition-colors text-primary font-headline-sm text-headline-sm border-b-2 border-primary-container drop-shadow-[0_0_12px_rgba(56,189,248,0.5)]" data-path="home" href="#">Home</a><a class="px-space-sm py-space-xs font-headline-sm text-headline-sm uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" data-path="scores-and-schedule" href="#">Scores &amp; Schedule</a><a class="px-space-sm py-space-xs font-headline-sm text-headline-sm uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" data-path="standings" href="#">Standings</a><a class="px-space-sm py-space-xs font-headline-sm text-headline-sm uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" data-path="teams-and-players" href="#">Teams &amp; Players</a><a class="px-space-sm py-space-xs font-headline-sm text-headline-sm uppercase tracking-wider text-on-surface-variant hover:text-on-surface transition-colors" data-path="news" href="#">News</a></nav></div><div class="flex items-center gap-space-md"><button class="hidden lg:flex items-center gap-space-sm px-space-md py-space-xs bg-surface-container-low/70 hover:bg-surface-container text-on-surface-variant hover:text-on-surface rounded-lg transition-colors" type="button"><span class="material-symbols-outlined text-[18px]">search</span><span class="font-body-sm text-body-sm">Search teams, stats...</span><kbd class="px-space-xs py-0.5 bg-surface-container-high rounded text-on-surface-variant font-label-sm text-label-sm">Cmd+K</kbd></button><div class="flex items-center gap-space-xs px-space-sm py-1 bg-secondary-container/30 rounded-full"><span class="w-2 h-2 rounded-full bg-secondary-container animate-pulse"></span><span class="font-label-sm text-label-sm uppercase tracking-widest text-secondary">(3) LIVE</span></div><a class="hidden sm:inline-flex items-center px-space-md py-space-xs bg-primary-container text-on-primary-container font-headline-sm text-headline-sm uppercase rounded-lg shadow-[0_0_16px_rgba(56,189,248,0.3)] hover:brightness-110 transition-all" data-path="join-club" href="#">Join Club</a><div class="flex items-center gap-space-xs"><img alt="Profile" class="w-8 h-8 rounded-full object-cover ring-2 ring-primary-container/40" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBfHUpdarNUTceoBHuLV4NoYZKJrCiHIF20lDCfEkrLFG2EZzlBwzRT3wHex9tEi2_pm3ReR42iFNp-EoSxWnRTp8bg9oYJ3NztfzAqFzorb-uNwodwMCVz3ifOqp-dRlOtlipehLBVOLFIDADMt-4Ro_3yX-KdzyyjiQ2pkgH0el4dmv5kfNAykurIad_QEMS9qsYpUGJmPLFcIttn0WekChT10UyViT-I8-JqzQo"/><button class="xl:hidden flex items-center justify-center p-space-xs text-on-surface-variant hover:text-on-surface" type="button"><span class="material-symbols-outlined">menu</span></button></div></div></div><div class="h-12 w-full px-gutter bg-surface-container-lowest/95 border-b border-outline-variant/20 flex items-center overflow-x-auto gap-space-md py-space-xs"><div class="flex items-center gap-space-xs shrink-0 pr-space-sm border-r border-outline-variant/30 text-on-surface-variant font-label-sm text-label-sm uppercase"><span class="material-symbols-outlined text-[16px] text-primary">scoreboard</span><span>Scores</span></div><div class="flex items-center gap-space-md shrink-0"><div class="flex items-center gap-space-sm bg-surface-container-low/80 px-space-sm py-1 rounded border border-outline-variant/20 hover:border-primary-container/40 transition-colors"><span class="w-1.5 h-1.5 rounded-full bg-secondary animate-ping"></span><span class="font-label-sm text-label-sm text-secondary uppercase">3RD 14:20</span><span class="font-headline-sm text-headline-sm text-on-surface">TOR 3</span><span class="text-outline-variant font-label-sm text-label-sm">-</span><span class="font-headline-sm text-headline-sm text-on-surface">2 BOS</span></div><div class="flex items-center gap-space-sm bg-surface-container-low/80 px-space-sm py-1 rounded border border-outline-variant/20 hover:border-primary-container/40 transition-colors"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase">FINAL</span><span class="font-headline-sm text-headline-sm text-on-surface-variant">NYR 1</span><span class="text-outline-variant font-label-sm text-label-sm">-</span><span class="font-headline-sm text-headline-sm text-on-surface">4 EDM</span></div><div class="flex items-center gap-space-sm bg-surface-container-low/80 px-space-sm py-1 rounded border border-outline-variant/20 hover:border-primary-container/40 transition-colors"><span class="w-1.5 h-1.5 rounded-full bg-secondary animate-ping"></span><span class="font-label-sm text-label-sm text-secondary uppercase">OT LIVE</span><span class="font-headline-sm text-headline-sm text-on-surface">COL 2</span><span class="text-outline-variant font-label-sm text-label-sm">-</span><span class="font-headline-sm text-headline-sm text-on-surface">2 VGK</span></div><div class="flex items-center gap-space-sm bg-surface-container-low/80 px-space-sm py-1 rounded border border-outline-variant/20 hover:border-primary-container/40 transition-colors"><span class="font-label-sm text-label-sm text-primary uppercase">7:30 PM ET</span><span class="font-headline-sm text-headline-sm text-on-surface">TBL</span><span class="text-outline-variant font-label-sm text-label-sm">vs</span><span class="font-headline-sm text-headline-sm text-on-surface">FLA</span></div></div></div></header><main class="w-full pt-32 bg-surface min-h-[calc(100vh-28rem)]"><div class="flex flex-col w-full">
+<div class="w-full max-w-[1440px] mx-auto px-gutter py-space-md flex flex-col gap-space-lg">
+<!-- HERO SECTION: GAME OF THE NIGHT SHOWDOWN -->
+<section class="relative w-full rounded-xl overflow-hidden bg-surface-container-low shadow-2xl">
+<!-- Ambient Lighting & Scrim Background -->
+<div class="absolute inset-0 bg-cover bg-center mix-blend-luminosity opacity-25" data-alt="Intense high-stakes professional ice hockey arena match with ice spray from speeding hockey skate blades, dramatic moody arena spot-lighting, electric blue mist and deep midnight navy arena shadows, cinematic broadcast action shot of Bruins vs Maple Leafs rivalry game with intense crowd bokeh" style="background-image: url('https://lh3.googleusercontent.com/aida-public/AB6AXuALc5rbUCYyqiksM8qdwAKR1bCZiy5gooS-BUQT8kBa03WP2cycNHGQ3tDDLzefCsPHpMAc_xxr1GJ4agDF34KisaKAs9sQbENH5f99viEnTot5VObRcWEdPBx91JV1zMgCaOsz6Z986xBqo460lf-X-L9s3dr8uCjPmJnUUOtOlShWB4GE5fKSMW6nZhSHOT10kVsQlpOFPgToZPkjjCTtGDh-GXoy2XwflTxrzBw')">
+</div>
+<div class="absolute inset-0 bg-gradient-to-r from-surface-container-lowest via-surface-container-low/95 to-surface-container/90"></div>
+<!-- Top Neon Border Accents & Status Ticker -->
+<div class="relative z-10 flex flex-wrap items-center justify-between gap-space-md px-space-lg pt-space-md pb-space-sm bg-surface-container-lowest/80 backdrop-blur-md">
+<div class="flex items-center gap-space-sm">
+<span class="flex h-2.5 w-2.5 relative">
+<span class="animate-ping absolute inline-flex h-full w-full rounded-full bg-secondary-container opacity-75"></span>
+<span class="relative inline-flex rounded-full h-2.5 w-2.5 bg-secondary-container"></span>
+</span>
+<span class="font-headline-sm text-headline-sm uppercase tracking-widest text-secondary">LIVE SHOWDOWN</span>
+<span class="text-outline-variant font-label-sm text-label-sm">•</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-primary font-label-sm text-label-sm uppercase tracking-wider">3RD PERIOD — 04:15</span>
+<span class="px-space-xs py-0.5 rounded bg-secondary-container text-on-secondary-container font-label-sm text-label-sm uppercase tracking-wider font-bold animate-pulse">POWER PLAY TOR (5-ON-4)</span>
+</div>
+<div class="flex items-center gap-space-md font-label-sm text-label-sm text-on-surface-variant">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-primary">sensors</span> NATIONAL BROADCAST: TNT / SNO</span>
+<span class="hidden md:inline text-outline-variant">•</span>
+<span class="hidden md:flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-on-surface-variant">location_on</span> SCOTIABANK ARENA</span>
+</div>
+</div>
+<!-- Main Hero Match Content Grid -->
+<div class="relative z-10 p-space-lg grid grid-cols-1 lg:grid-cols-12 gap-space-xl items-center">
+<!-- Match Scoreboard & Team Faceoff (7 Cols) -->
+<div class="lg:col-span-7 flex flex-col gap-space-md">
+<div class="flex items-center gap-space-xs">
+<span class="px-space-xs py-0.5 rounded bg-primary-container/20 text-primary-container font-label-sm text-label-sm tracking-widest uppercase">ORIGINAL SIX CLASH</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm">GAME 68 OF 82</span>
+</div>
+<div class="flex flex-col sm:flex-row items-start sm:items-center justify-between gap-space-md bg-surface-container/60 backdrop-blur-xl p-space-md rounded-xl shadow-lg">
+<!-- Boston Bruins Column -->
+<div class="flex items-center gap-space-md flex-1">
+<div class="w-14 h-14 rounded-xl bg-surface-container-highest flex items-center justify-center font-display-xl text-display-xl text-primary-fixed-dim shadow-inner">
+                B
+              </div>
+<div class="flex flex-col">
+<span class="font-headline-lg text-headline-lg uppercase text-on-surface leading-none">BRUINS</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Boston (38-16-9)</span>
+<span class="font-label-sm text-label-sm text-outline mt-1">SOG: 32 • FO%: 52.4%</span>
+</div>
+</div>
+<!-- Live Tabular Score Board -->
+<div class="flex flex-col items-center justify-center px-space-md py-space-xs rounded-lg bg-surface-container-lowest/90 min-w-[130px] text-center shadow-inner">
+<div class="flex items-baseline gap-space-sm">
+<span class="font-display-xl text-display-xl text-on-surface-variant">3</span>
+<span class="font-headline-sm text-headline-sm text-outline-variant">-</span>
+<span class="font-display-xl text-display-xl text-primary-container">4</span>
+</div>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-widest font-bold">TOR LEADS</span>
+</div>
+<!-- Toronto Maple Leafs Column -->
+<div class="flex items-center sm:flex-row-reverse gap-space-md flex-1 text-left sm:text-right">
+<div class="w-14 h-14 rounded-xl bg-primary-container/20 flex items-center justify-center font-display-xl text-display-xl text-primary-container shadow-inner">
+                T
+              </div>
+<div class="flex flex-col">
+<span class="font-headline-lg text-headline-lg uppercase text-primary-container leading-none">LEAFS</span>
+<span class="font-body-sm text-body-sm text-on-surface-variant">Toronto (40-19-6)</span>
+<span class="font-label-sm text-label-sm text-outline mt-1">SOG: 29 • PP: 2/3</span>
+</div>
+</div>
+</div>
+<!-- Action Buttons -->
+<div class="flex flex-wrap items-center gap-space-sm pt-space-xs">
+<a class="inline-flex items-center gap-space-xs px-space-lg py-space-xs bg-primary-container text-on-primary-container rounded-lg font-headline-sm text-headline-sm uppercase tracking-wider hover:brightness-110 shadow-lg shadow-primary-container/20 transition-all" href="#">
+<span class="material-symbols-outlined text-[20px] animate-pulse">play_circle</span>
+              Watch Live Stream
+            </a>
+<a class="inline-flex items-center gap-space-xs px-space-md py-space-xs bg-surface-container-high/80 text-on-surface rounded-lg font-headline-sm text-headline-sm uppercase tracking-wider hover:bg-surface-bright transition-all" href="#">
+<span class="material-symbols-outlined text-[18px]">query_stats</span>
+              Game Center &amp; Box Score
+            </a>
+<button class="inline-flex items-center gap-space-xs px-space-sm py-space-xs bg-surface-container/60 hover:bg-surface-container text-on-surface-variant rounded-lg font-label-md text-label-md uppercase transition-colors" type="button">
+<span class="material-symbols-outlined text-[16px]">notifications_active</span>
+              Alerts
+            </button>
+</div>
+</div>
+<!-- Right Side: Momentum Bar & Star Performer (5 Cols) -->
+<div class="lg:col-span-5 flex flex-col gap-space-sm bg-surface-container-lowest/80 backdrop-blur-md p-space-md rounded-xl">
+<div class="flex items-center justify-between pb-space-xs">
+<span class="font-headline-sm text-headline-sm uppercase tracking-wider text-on-surface flex items-center gap-1.5">
+<span class="material-symbols-outlined text-primary text-[18px]">equalizer</span>
+              Ice Momentum Telemetry
+            </span>
+<span class="font-label-sm text-label-sm text-secondary uppercase tracking-wider font-semibold">TOR 58% Pressure</span>
+</div>
+<!-- Inline Momentum Tracker SVG Bar Chart -->
+<div class="w-full bg-surface-container-low p-space-xs rounded-lg">
+<div class="flex items-center justify-between text-label-sm font-label-sm text-outline mb-1">
+<span>BOS (1st)</span>
+<span>2nd Period</span>
+<span class="text-primary-container">TOR (3rd)</span>
+</div>
+<svg class="w-full h-11 text-on-surface" fill="none" preserveaspectratio="none" viewbox="0 0 320 40">
+<!-- Grid line -->
+<line stroke="currentColor" stroke-dasharray="3 3" stroke-opacity="0.15" x1="0" x2="320" y1="20" y2="20"></line>
+<!-- Baseline BOS Area (negative pressure) -->
+<path d="M0,20 Q40,32 70,25 T140,24 T190,16 T240,8 T320,5 L320,20 Z" fill="rgba(56, 189, 248, 0.25)"></path>
+<!-- Toronto Momentum Wave Line -->
+<path d="M0,20 Q40,32 70,25 T140,24 T190,16 T240,8 T320,5" stroke="#38bdf8" stroke-linecap="round" stroke-width="2.5"></path>
+<!-- Boston Momentum Accent -->
+<path d="M0,20 Q30,12 60,14 T110,25 T160,26 T220,29 T320,33" stroke="#ffb3ad" stroke-dasharray="2 2" stroke-width="1.5"></path>
+</svg>
+<div class="flex items-center justify-between text-label-sm font-label-sm text-on-surface-variant mt-1">
+<span class="text-secondary font-bold">• BOS Goal 11:02</span>
+<span class="text-primary-container font-bold">• TOR Goal (PP) 16:48</span>
+</div>
+</div>
+<!-- Featured On-Ice Performer -->
+<div class="flex items-center gap-space-sm pt-space-xs bg-surface-container-high/40 p-space-xs rounded-lg">
+<div class="w-12 h-12 rounded-lg bg-surface-container-highest overflow-hidden shrink-0">
+<img class="w-full h-full object-cover" data-alt="Professional hockey center player portrait in blue jersey, intense athletic gaze, high contrast sports studio lighting against dark stadium shadows" src="https://lh3.googleusercontent.com/aida-public/AB6AXuD8ic6TjXi_3VOQVtyK0PeU2NHWGyuOCgM74ptB2W8GO8JA8blvnuQMTMPE0GEQxWNL5fEOmR6xrYOIWb5aBIIZK9LrFRceibsSmoYn3qWVTaikd5qCK40eBZ02p8Kx3SYbb5gktXJooEniOr3Zp1iv_esCZiKnTwCcNAD8dzgS4mtQNoXhWOn8ynxwtOp1ECBxLuWY05H8PlLr9JPU2dyRL2kb6CeLwmx6cqMg_ig"/>
+</div>
+<div class="flex-1 min-w-0">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm uppercase text-on-surface truncate">Auston Matthews</span>
+<span class="px-space-xs py-0.5 bg-primary-container/20 text-primary-container rounded font-label-sm text-label-sm">#34 • C</span>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant">2 Goals (PPG), 1 Assist, +2, 6 SOG, 21:14 TOI</p>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- SCORES STRIP: TODAY'S GAMES CAROUSEL / GRID -->
+<section class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between px-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="font-headline-sm text-headline-sm uppercase tracking-wider text-on-surface">TODAY'S SLATE</span>
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high font-label-sm text-label-sm text-on-surface-variant">5 OF 9 FINAL</span>
+</div>
+<a class="font-headline-sm text-headline-sm uppercase tracking-wider text-primary hover:text-primary-container transition-colors flex items-center gap-1" href="#">
+          Full Scoreboard
+          <span class="material-symbols-outlined text-[16px]">chevron_right</span>
+</a>
+</div>
+<div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-5 gap-space-sm">
+<!-- Game 1: FINAL -->
+<div class="bg-surface-container-low hover:bg-surface-container p-space-sm rounded-xl transition-all shadow flex flex-col justify-between gap-space-sm group">
+<div class="flex items-center justify-between text-label-sm font-label-sm pb-space-xs">
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-on-surface-variant uppercase font-semibold">FINAL</span>
+<span class="text-outline uppercase">ALT / SNE</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm uppercase text-on-surface group-hover:text-primary transition-colors flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span> COL
+              </span>
+<span class="font-headline-md text-headline-md text-on-surface font-bold">5</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm uppercase text-on-surface-variant flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-outline-variant"></span> VGK
+              </span>
+<span class="font-headline-md text-headline-md text-on-surface-variant">3</span>
+</div>
+</div>
+<div class="pt-space-xs text-label-sm font-label-sm text-outline truncate">
+            MacKinnon 2G 1A (GWG)
+          </div>
+</div>
+<!-- Game 2: FINAL / SO -->
+<div class="bg-surface-container-low hover:bg-surface-container p-space-sm rounded-xl transition-all shadow flex flex-col justify-between gap-space-sm group">
+<div class="flex items-center justify-between text-label-sm font-label-sm pb-space-xs">
+<span class="px-space-xs py-0.5 rounded bg-surface-container text-on-surface-variant uppercase font-semibold">FINAL (SO)</span>
+<span class="text-outline uppercase">MSGSN</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm uppercase text-on-surface group-hover:text-primary transition-colors flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span> NYR
+              </span>
+<span class="font-headline-md text-headline-md text-on-surface font-bold">2</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm uppercase text-on-surface-variant flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-outline-variant"></span> NJD
+              </span>
+<span class="font-headline-md text-headline-md text-on-surface-variant">1</span>
+</div>
+</div>
+<div class="pt-space-xs text-label-sm font-label-sm text-outline truncate">
+            Panarin SO Winner (Rd 4)
+          </div>
+</div>
+<!-- Game 3: LIVE 2ND -->
+<div class="bg-surface-container-low hover:bg-surface-container p-space-sm rounded-xl transition-all shadow flex flex-col justify-between gap-space-sm relative overflow-hidden group">
+<div class="absolute top-0 left-0 right-0 h-0.5 bg-secondary"></div>
+<div class="flex items-center justify-between text-label-sm font-label-sm pb-space-xs">
+<span class="px-space-xs py-0.5 rounded bg-secondary-container/30 text-secondary uppercase font-bold flex items-center gap-1">
+<span class="w-1.5 h-1.5 rounded-full bg-secondary animate-ping"></span> 2ND 08:34
+            </span>
+<span class="text-outline uppercase">SNW</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm uppercase text-primary-container flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span> EDM
+              </span>
+<span class="font-headline-md text-headline-md text-primary-container font-bold">4</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm uppercase text-on-surface flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-outline-variant"></span> CAR
+              </span>
+<span class="font-headline-md text-headline-md text-on-surface">2</span>
+</div>
+</div>
+<div class="pt-space-xs text-label-sm font-label-sm text-secondary truncate font-semibold">
+            McDavid 50th Goal Breakaway
+          </div>
+</div>
+<!-- Game 4: PREGAME 7:30 PM -->
+<div class="bg-surface-container-low hover:bg-surface-container p-space-sm rounded-xl transition-all shadow flex flex-col justify-between gap-space-sm group">
+<div class="flex items-center justify-between text-label-sm font-label-sm pb-space-xs">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-primary uppercase font-bold">7:30 PM ET</span>
+<span class="text-outline uppercase">ESPN+</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm uppercase text-on-surface flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-surface-bright"></span> TBL
+              </span>
+<span class="font-headline-md text-headline-md text-outline">-</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm uppercase text-on-surface flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-surface-bright"></span> FLA
+              </span>
+<span class="font-headline-md text-headline-md text-outline">-</span>
+</div>
+</div>
+<div class="pt-space-xs text-label-sm font-label-sm text-on-surface-variant truncate">
+            Battle of Florida • FLA -140
+          </div>
+</div>
+<!-- Game 5: PREGAME 8:00 PM -->
+<div class="bg-surface-container-low hover:bg-surface-container p-space-sm rounded-xl transition-all shadow flex flex-col justify-between gap-space-sm group">
+<div class="flex items-center justify-between text-label-sm font-label-sm pb-space-xs">
+<span class="px-space-xs py-0.5 rounded bg-surface-container-high text-primary uppercase font-bold">8:00 PM ET</span>
+<span class="text-outline uppercase">NBCSCH</span>
+</div>
+<div class="flex flex-col gap-space-xs">
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm uppercase text-on-surface flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-surface-bright"></span> DAL
+              </span>
+<span class="font-headline-md text-headline-md text-outline">-</span>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-headline-sm text-headline-sm uppercase text-on-surface flex items-center gap-1.5">
+<span class="w-2 h-2 rounded-full bg-surface-bright"></span> CHI
+              </span>
+<span class="font-headline-md text-headline-md text-outline">-</span>
+</div>
+</div>
+<div class="pt-space-xs text-label-sm font-label-sm text-on-surface-variant truncate">
+            Central Rivalry • DAL -210
+          </div>
+</div>
+</div>
+</section>
+<!-- MAIN TWO-COLUMN CONTENT GRID -->
+<div class="grid grid-cols-1 lg:grid-cols-12 gap-space-lg items-start">
+<!-- LEFT COLUMN: TOP STORIES & EDITORIAL FEED (65% -> 8 Cols) -->
+<section class="lg:col-span-8 flex flex-col gap-space-md">
+<!-- Section Title & Filter Tabs -->
+<div class="flex items-center justify-between border-b border-outline-variant/30 pb-space-xs">
+<div class="flex items-center gap-space-sm">
+<span class="font-headline-md text-headline-md uppercase tracking-wider text-on-surface">TOP STORIES &amp; INTEL</span>
+<span class="px-space-xs py-0.5 rounded-full bg-primary-container/20 text-primary-container font-label-sm text-label-sm uppercase">UPDATED</span>
+</div>
+<div class="flex items-center gap-1 bg-surface-container-lowest p-1 rounded-lg">
+<button class="px-space-sm py-0.5 rounded bg-primary-container text-on-primary-container font-label-sm text-label-sm uppercase">ALL</button>
+<button class="px-space-sm py-0.5 rounded text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm uppercase">TRANSFERS</button>
+<button class="px-space-sm py-0.5 rounded text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm uppercase">ANALYSIS</button>
+</div>
+</div>
+<!-- Lead Headline Card -->
+<article class="relative w-full rounded-xl overflow-hidden bg-surface-container-low hover:bg-surface-container transition-all group shadow-xl">
+<div class="h-80 w-full relative overflow-hidden">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500" data-alt="Professional hockey defenseman on ice during a dramatic arena game, dark high-contrast arena environment, sharp ice spray, neon blue stadium lights in the background, sharp telephoto action shot" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkw2HOS2oIFgKm3z_YEnuItC2oDJP3dzyVf4ZL4Ukyv288GqvZPSFcxgkl4bIfWRR6vixgOPj0P6vn5kSaV3Zl7_cn7_X1mVIZwarmm2-jfnItRVr0CyK5waxcdP2Kni-oloU-AmGN5VBmJ7no4Um1fSL5CUFaWSBn6wcVnc5a9R-gtOF1uj8F8HLmngxtGmpkTM0tVJZSIQ53pJubwZoeq-F6XjD-zIo0HtHv7j8"/>
+<div class="absolute inset-0 bg-gradient-to-t from-surface-container-low via-surface-container-low/60 to-transparent"></div>
+<div class="absolute top-space-md left-space-md flex items-center gap-space-xs">
+<span class="px-space-sm py-1 bg-secondary-container text-on-secondary-container font-headline-sm text-headline-sm uppercase tracking-wider rounded shadow">
+                BREAKING TRADE
+              </span>
+<span class="px-space-xs py-1 bg-surface-container-lowest/80 backdrop-blur-md text-on-surface font-label-sm text-label-sm uppercase rounded">
+                12M AGO
+              </span>
+</div>
+</div>
+<div class="p-space-lg -mt-12 relative z-10 flex flex-col gap-space-xs">
+<div class="flex items-center gap-space-sm font-label-md text-label-md uppercase text-primary tracking-widest">
+<span>OFFICIAL LEAGUE WIRE</span>
+<span>•</span>
+<span>WESTERN CONFERENCE IMPACT</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg uppercase text-on-surface group-hover:text-primary-container transition-colors leading-tight">
+              TRADE BLOCKBUSTER: Top Defenseman Moves to Vegas Ahead of Deadline in 4-Asset Deal
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant max-w-2xl">
+              The Golden Knights reinforce their blue line with veteran blue-liner, sending two top-prospect forwards and a protected 2026 first-round pick in a late-afternoon shocker.
+            </p>
+<div class="flex items-center gap-space-md pt-space-xs text-on-surface-variant font-body-sm text-body-sm">
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px] text-primary">person</span> Dan Rosen, Senior Insider</span>
+<span>•</span>
+<span class="flex items-center gap-1"><span class="material-symbols-outlined text-[16px]">chat_bubble</span> 184 Comments</span>
+</div>
+</div>
+</article>
+<!-- Secondary Stories 3-Card Grid -->
+<div class="grid grid-cols-1 md:grid-cols-3 gap-space-md">
+<!-- Secondary 1: Overtime Thriller -->
+<article class="bg-surface-container-low hover:bg-surface-container rounded-xl overflow-hidden shadow flex flex-col transition-all group">
+<div class="h-44 w-full relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Hockey center forward celebrating a winning overtime goal with arms raised high, helmet visor reflecting the bright ice arena lights, electric blue and cold stadium navy atmosphere" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBMbe9_bEyZZOFXhnk3qL9DsFVQ6UnnW0kd-hBtDxhS8D_6smpYBv8slfiFxTsuJaItv9l5gaAuczV4g2pI3wYcsBh_OuwbBewRoxLX-qghmfD5_FTEjUaOwNdwABe2r-jLZF7Cvkl3YKBni3CvhpSUavwQ3dK4Rme3HEL8G-tNJw7aFQGitsgXIFJoy8UPuQGz7aSU0oQ8dmN3MjaklbEQ_zZQ846BZfBIeKYsjZA"/>
+<span class="absolute top-space-xs left-space-xs px-space-xs py-0.5 bg-primary-container text-on-primary-container font-label-sm text-label-sm uppercase rounded font-bold">
+                HIGHLIGHTS
+              </span>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-xs">
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">34m ago • Milestone</span>
+<h4 class="font-headline-md text-headline-md uppercase text-on-surface group-hover:text-primary transition-colors leading-snug mt-1">
+                  OVERTIME THRILLER: McDavid scores 50th of season in dramatic breakaway
+                </h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                The Edmonton captain reaches the 50-goal plateau in just 64 games with a dazzling backhand roof finish in extra time.
+              </p>
+</div>
+</article>
+<!-- Secondary 2: Injury Update -->
+<article class="bg-surface-container-low hover:bg-surface-container rounded-xl overflow-hidden shadow flex flex-col transition-all group">
+<div class="h-44 w-full relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Ice hockey goaltender in pads kneeling in the crease, dramatic ice reflections, deep blue arena atmosphere, high-speed photography" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB9sOJFI33kUwc5x8PSGfPlKCJGXuRgFSoNxdDDfM7W8iD0c_XOMD112hTaEeFQqzS_gsTCgZzGgILMyMq83Q-vTKuYU6gMWhR5u_6hRVZj7IoA-L4wZHC01S7yJJCBAuJgx9EX2SgDARE1w9dtmAh7IdD5h5fPVX-l8av5ekdUqZZWD8PDBerlgrZlIWUixdb47In0ePdYiHsRwbUbTiHlHPwZOb6CpPAPkCs8gG4"/>
+<span class="absolute top-space-xs left-space-xs px-space-xs py-0.5 bg-secondary-container text-on-secondary-container font-label-sm text-label-sm uppercase rounded font-bold">
+                INJURIES
+              </span>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-xs">
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">1h ago • Official Medical</span>
+<h4 class="font-headline-md text-headline-md uppercase text-on-surface group-hover:text-primary transition-colors leading-snug mt-1">
+                  INJURY UPDATE: All-Star Goaltender out 4-6 weeks with lower body strain
+                </h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                Emergency call-up summoned from AHL affiliate as medical staff confirms quad rehabilitation timeline.
+              </p>
+</div>
+</article>
+<!-- Secondary 3: Analytics Breakdown -->
+<article class="bg-surface-container-low hover:bg-surface-container rounded-xl overflow-hidden shadow flex flex-col transition-all group">
+<div class="h-44 w-full relative">
+<img class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-300" data-alt="Overhead tactical view of hockey offensive zone with aggressive puck battle along the boards, clean ice rink markings, dramatic spotlighting" src="https://lh3.googleusercontent.com/aida-public/AB6AXuACbWyAhBFrLOx7M5uukQhwU7RYXbVT37_OrSJlL-A2SkkaRxVxxttEQCABInuNsmg0EyvcNq2x8RDfndvpLl7Hl0eJ8vq2OZgiL3a2lEXfpzMbw3EOKOUUploZxihKEg0yGpHGCiQu98C9Dfax6_hzwic9yCmPH1_XH8YtNvip0_4EySTDKMvz9YW3vWGJVeD7p0w21fc6flDwWDAnFLlVZvs5czmCa0vBg6_2ptw"/>
+<span class="absolute top-space-xs left-space-xs px-space-xs py-0.5 bg-surface-container-highest text-primary-fixed-dim font-label-sm text-label-sm uppercase rounded font-bold">
+                ANALYTICS
+              </span>
+</div>
+<div class="p-space-md flex flex-col flex-1 justify-between gap-space-xs">
+<div>
+<span class="font-label-sm text-label-sm text-outline uppercase tracking-wider">3h ago • Deep Dive</span>
+<h4 class="font-headline-md text-headline-md uppercase text-on-surface group-hover:text-primary transition-colors leading-snug mt-1">
+                  ANALYTICS BREAKDOWN: Why forechecking efficiency is driving Florida's 8-game streak
+                </h4>
+</div>
+<p class="font-body-sm text-body-sm text-on-surface-variant line-clamp-2">
+                Puck-recovery metrics indicate a 24% boost in offensive zone takeaways under new high-pressure neutral trap system.
+              </p>
+</div>
+</article>
+</div>
+</section>
+<!-- RIGHT COLUMN: SIDEBAR (STANDINGS + SPOTLIGHT) (35% -> 4 Cols) -->
+<aside class="lg:col-span-4 flex flex-col gap-space-md">
+<!-- MINI STANDINGS TABLE -->
+<div class="bg-surface-container-low rounded-xl p-space-md shadow flex flex-col gap-space-sm">
+<div class="flex items-center justify-between pb-space-xs">
+<div class="flex items-center gap-space-xs">
+<span class="material-symbols-outlined text-primary text-[20px]">format_list_numbered</span>
+<span class="font-headline-md text-headline-md uppercase tracking-wider text-on-surface">STANDINGS</span>
+</div>
+<span class="font-label-sm text-label-sm text-outline uppercase">PTS • L10</span>
+</div>
+<!-- Conference Selector Tabs -->
+<div class="flex items-center gap-1 bg-surface-container-lowest p-1 rounded-lg">
+<button class="flex-1 py-1 text-center rounded bg-primary-container text-on-primary-container font-label-sm text-label-sm uppercase transition-all">Eastern</button>
+<button class="flex-1 py-1 text-center rounded text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm uppercase transition-all">Western</button>
+<button class="flex-1 py-1 text-center rounded text-on-surface-variant hover:text-on-surface font-label-sm text-label-sm uppercase transition-all">Wild Card</button>
+</div>
+<!-- Standings Table -->
+<div class="w-full flex flex-col overflow-hidden">
+<div class="grid grid-cols-12 text-label-sm font-label-sm uppercase text-outline py-space-xs border-b border-outline-variant/20">
+<span class="col-span-2">RK</span>
+<span class="col-span-5">TEAM</span>
+<span class="col-span-2 text-right">GP</span>
+<span class="col-span-3 text-right">PTS</span>
+</div>
+<!-- Row 1 (Clinched Leader) -->
+<div class="grid grid-cols-12 items-center py-space-xs hover:bg-surface-container transition-colors rounded">
+<span class="col-span-2 font-headline-sm text-headline-sm text-primary flex items-center gap-1">
+                1 <span class="material-symbols-outlined text-[14px] text-primary" title="Clinched Playoff Spot">verified</span>
+</span>
+<span class="col-span-5 font-headline-sm text-headline-sm uppercase text-on-surface flex items-center gap-1.5 truncate">
+<span class="w-2 h-2 rounded-full bg-primary"></span> FLA Panthers
+              </span>
+<span class="col-span-2 text-right font-body-sm text-body-sm text-on-surface-variant">65</span>
+<span class="col-span-3 text-right font-headline-sm text-headline-sm text-primary font-bold">96</span>
+</div>
+<!-- Row 2 -->
+<div class="grid grid-cols-12 items-center py-space-xs hover:bg-surface-container transition-colors rounded">
+<span class="col-span-2 font-headline-sm text-headline-sm text-on-surface">2</span>
+<span class="col-span-5 font-headline-sm text-headline-sm uppercase text-on-surface flex items-center gap-1.5 truncate">
+<span class="w-2 h-2 rounded-full bg-primary-fixed-dim"></span> BOS Bruins
+              </span>
+<span class="col-span-2 text-right font-body-sm text-body-sm text-on-surface-variant">64</span>
+<span class="col-span-3 text-right font-headline-sm text-headline-sm text-on-surface font-bold">91</span>
+</div>
+<!-- Row 3 -->
+<div class="grid grid-cols-12 items-center py-space-xs hover:bg-surface-container transition-colors rounded">
+<span class="col-span-2 font-headline-sm text-headline-sm text-on-surface">3</span>
+<span class="col-span-5 font-headline-sm text-headline-sm uppercase text-on-surface flex items-center gap-1.5 truncate">
+<span class="w-2 h-2 rounded-full bg-primary-container"></span> NYR Rangers
+              </span>
+<span class="col-span-2 text-right font-body-sm text-body-sm text-on-surface-variant">64</span>
+<span class="col-span-3 text-right font-headline-sm text-headline-sm text-on-surface font-bold">88</span>
+</div>
+<!-- Playoff Cutoff Indicator -->
+<div class="relative py-1 my-1">
+<div class="absolute inset-0 flex items-center">
+<div class="w-full border-t border-dashed border-primary-container/40"></div>
+</div>
+<div class="relative flex justify-center">
+<span class="bg-surface-container-low px-space-xs text-[10px] uppercase font-label-sm text-primary tracking-widest font-bold">
+                  PLAYOFF CUTOFF LINE
+                </span>
+</div>
+</div>
+<!-- Row 4 -->
+<div class="grid grid-cols-12 items-center py-space-xs hover:bg-surface-container transition-colors rounded">
+<span class="col-span-2 font-headline-sm text-headline-sm text-on-surface-variant">4</span>
+<span class="col-span-5 font-headline-sm text-headline-sm uppercase text-on-surface flex items-center gap-1.5 truncate">
+<span class="w-2 h-2 rounded-full bg-outline"></span> TOR Leafs
+              </span>
+<span class="col-span-2 text-right font-body-sm text-body-sm text-on-surface-variant">64</span>
+<span class="col-span-3 text-right font-headline-sm text-headline-sm text-on-surface font-bold">86</span>
+</div>
+<!-- Row 5 -->
+<div class="grid grid-cols-12 items-center py-space-xs hover:bg-surface-container transition-colors rounded">
+<span class="col-span-2 font-headline-sm text-headline-sm text-on-surface-variant">5</span>
+<span class="col-span-5 font-headline-sm text-headline-sm uppercase text-on-surface flex items-center gap-1.5 truncate">
+<span class="w-2 h-2 rounded-full bg-outline"></span> CAR Canes
+              </span>
+<span class="col-span-2 text-right font-body-sm text-body-sm text-on-surface-variant">65</span>
+<span class="col-span-3 text-right font-headline-sm text-headline-sm text-on-surface font-bold">84</span>
+</div>
+</div>
+<a class="mt-space-xs py-space-xs text-center rounded-lg bg-surface-container hover:bg-surface-bright text-primary font-headline-sm text-headline-sm uppercase tracking-wider transition-colors flex items-center justify-center gap-1" href="#">
+            View Full Standings Table
+            <span class="material-symbols-outlined text-[16px]">arrow_forward</span>
+</a>
+</div>
+<!-- PLAYER SPOTLIGHT CARD: NATHAN MACKINNON -->
+<div class="relative bg-surface-container-low rounded-xl overflow-hidden shadow flex flex-col">
+<!-- Spotlight Badge & Background Glow -->
+<div class="p-space-md pb-0 flex items-center justify-between z-10">
+<span class="px-space-xs py-0.5 rounded bg-secondary-container/40 text-secondary uppercase font-label-sm text-label-sm tracking-widest font-bold">
+              STAR OF THE WEEK
+            </span>
+<span class="text-primary font-label-sm text-label-sm uppercase">14-GAME POINT STREAK</span>
+</div>
+<div class="relative p-space-md flex flex-col gap-space-sm z-10">
+<div class="flex items-center gap-space-md">
+<div class="w-20 h-20 rounded-xl overflow-hidden bg-surface-container-highest shrink-0 shadow-lg">
+<img class="w-full h-full object-cover" data-alt="Athletic hockey center star player headshot with determined expression, Colorado burgundy and navy tones, studio sports editorial portrait" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCddVCoLIb09uJ4FKPabRRXXiB9ycZggWzvZ0zlgaJLpAhueQx5eo_GYWUG6Z0uHtj984yjez9DMIkH8wvlypeg3Oa-j6xP7MhSvEkg2EBBGRquFF4JPYGO2bWE9Cm9BXmrTYUx4ucaCecxuQilLN_BQZNBDqrIXEDz2dZS52eXDibujjQYwsf2r8WJlR4D6xIxv4uyHy0wi3yM7eOLIpxSb8AS8TxZzoDm3xrDgi4"/>
+</div>
+<div class="flex flex-col">
+<h4 class="font-headline-lg text-headline-lg uppercase text-on-surface leading-none">
+                  NATHAN MACKINNON
+                </h4>
+<span class="font-headline-sm text-headline-sm text-primary uppercase mt-1">Colorado Avalanche • #29 C</span>
+<span class="font-label-sm text-label-sm text-on-surface-variant uppercase">Hart Trophy Frontrunner</span>
+</div>
+</div>
+<!-- Stats Ribbon 4-Cell Grid -->
+<div class="grid grid-cols-4 gap-space-xs text-center bg-surface-container-lowest p-space-xs rounded-lg shadow-inner">
+<div class="flex flex-col">
+<span class="font-display-xl-mobile text-display-xl-mobile text-on-surface leading-none font-bold">42</span>
+<span class="font-label-sm text-label-sm text-outline uppercase mt-1">GOALS</span>
+</div>
+<div class="flex flex-col">
+<span class="font-display-xl-mobile text-display-xl-mobile text-on-surface leading-none font-bold">64</span>
+<span class="font-label-sm text-label-sm text-outline uppercase mt-1">ASSISTS</span>
+</div>
+<div class="flex flex-col">
+<span class="font-display-xl-mobile text-display-xl-mobile text-primary-container leading-none font-bold">106</span>
+<span class="font-label-sm text-label-sm text-primary uppercase mt-1">POINTS</span>
+</div>
+<div class="flex flex-col">
+<span class="font-display-xl-mobile text-display-xl-mobile text-on-surface leading-none font-bold">+34</span>
+<span class="font-label-sm text-label-sm text-outline uppercase mt-1">+/-</span>
+</div>
+</div>
+<!-- Mini Quote & Streak Details -->
+<div class="bg-surface-container/60 p-space-xs rounded-lg text-body-sm font-body-sm text-on-surface-variant italic">
+              "We're dialing into postseason mode early. Every shift feels like playoff hockey right now."
+            </div>
+<a class="w-full py-space-xs text-center rounded bg-surface-container-high hover:bg-surface-bright text-on-surface font-headline-sm text-headline-sm uppercase tracking-wider transition-colors" href="#">
+              Player Tracking &amp; Video Logs
+            </a>
+</div>
+</div>
+</aside>
+</div>
+<!-- INTEGRATED NEWSLETTER BANNER -->
+<section class="relative w-full rounded-xl overflow-hidden bg-surface-container-low shadow-xl mt-space-sm">
+<div class="relative z-10 p-space-lg flex flex-col md:flex-row items-center justify-between gap-space-lg">
+<div class="flex items-center gap-space-md">
+<div class="w-14 h-14 rounded-xl bg-primary-container/20 flex items-center justify-center text-primary-container shrink-0">
+<span class="material-symbols-outlined text-[32px]">mark_email_unread</span>
+</div>
+<div class="flex flex-col">
+<div class="flex items-center gap-space-xs mb-1">
+<span class="px-space-xs py-0.5 rounded bg-primary-container text-on-primary-container font-label-sm text-label-sm uppercase font-bold">FREE SCOUTING DISPATCH</span>
+<span class="text-on-surface-variant font-label-sm text-label-sm uppercase">SENT 7:00 AM DAILY</span>
+</div>
+<h3 class="font-headline-lg text-headline-lg uppercase text-on-surface leading-none">
+              THE MORNING BREAKAWAY
+            </h3>
+<p class="font-body-md text-body-md text-on-surface-variant mt-1 max-w-xl">
+              Daily NHL recap, advanced analytics breakdown, power-play heat maps, and trade buzz sent straight to your inbox before morning skate.
+            </p>
+</div>
+</div>
+<form class="flex flex-col sm:flex-row items-center gap-space-xs w-full md:w-auto shrink-0" onsubmit="event.preventDefault(); this.querySelector('button').innerText = 'SUBSCRIBED!';">
+<input class="w-full sm:w-72 px-space-md py-space-xs bg-surface-container-lowest text-on-surface placeholder:text-outline rounded-lg font-body-sm text-body-sm focus:outline-none focus:ring-1 focus:ring-primary-container" placeholder="Enter your email..." required="" type="email"/>
+<button class="w-full sm:w-auto px-space-lg py-space-xs bg-primary-container hover:brightness-110 text-on-primary-container font-headline-sm text-headline-sm uppercase tracking-wider rounded-lg shadow-md transition-all shrink-0" type="submit">
+            Subscribe Free
+          </button>
+</form>
+</div>
+</section>
+</div>
+</div></main><footer class="w-full bg-surface-container-lowest border-t border-outline-variant/30"><div class="max-w-7xl mx-auto px-gutter py-space-xl"><div class="grid grid-cols-1 lg:grid-cols-12 gap-space-xl pb-space-xl border-b border-outline-variant/20"><div class="lg:col-span-5"><div class="flex items-center gap-space-sm mb-space-sm"><span class="material-symbols-outlined text-primary-container text-[24px]">sports_hockey</span><span class="font-headline-md text-headline-md uppercase tracking-wider text-on-surface">Morning Breakaway</span></div><p class="font-body-md text-body-md text-on-surface-variant mb-space-md max-w-md">Get insider scouting reports, line shifts, power-play analytics, and morning game highlights delivered directly to your inbox before puck drop.</p><form class="flex flex-col sm:flex-row gap-space-xs max-w-md"><input class="flex-1 px-space-md py-space-xs bg-surface-container-low border border-outline-variant/40 rounded-lg text-on-surface placeholder:text-outline font-body-sm text-body-sm focus:outline-none focus:border-primary-container" placeholder="Enter your hockey email..." type="email"/><button class="px-space-lg py-space-xs bg-primary-container text-on-primary-container font-headline-sm text-headline-sm uppercase tracking-wider rounded-lg hover:brightness-110 transition-all" type="button">Subscribe</button></form></div><div class="lg:col-span-7 grid grid-cols-2 sm:grid-cols-4 gap-space-md"><div><h4 class="font-headline-sm text-headline-sm uppercase tracking-wider text-on-surface mb-space-sm">Scores &amp; Data</h4><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><li class="hover:text-primary transition-colors"><a data-path="scores-and-schedule" href="#">Live Ice Ticker</a></li><li class="hover:text-primary transition-colors"><a data-path="scores-and-schedule" href="#">Today's Schedule</a></li><li class="hover:text-primary transition-colors"><a data-path="scores-and-schedule" href="#">Overtime Results</a></li><li class="hover:text-primary transition-colors"><a data-path="scores-and-schedule" href="#">Playoff Brackets</a></li></ul></div><div><h4 class="font-headline-sm text-headline-sm uppercase tracking-wider text-on-surface mb-space-sm">Divisions</h4><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><li class="hover:text-primary transition-colors"><a data-path="standings" href="#">Atlantic</a></li><li class="hover:text-primary transition-colors"><a data-path="standings" href="#">Metropolitan</a></li><li class="hover:text-primary transition-colors"><a data-path="standings" href="#">Central</a></li><li class="hover:text-primary transition-colors"><a data-path="standings" href="#">Pacific</a></li></ul></div><div><h4 class="font-headline-sm text-headline-sm uppercase tracking-wider text-on-surface mb-space-sm">Fantasy &amp; Intel</h4><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><li class="hover:text-primary transition-colors"><a data-path="teams-and-players" href="#">Puck Tracking</a></li><li class="hover:text-primary transition-colors"><a data-path="teams-and-players" href="#">Goalie Metrics</a></li><li class="hover:text-primary transition-colors"><a data-path="teams-and-players" href="#">Shot Quality Maps</a></li><li class="hover:text-primary transition-colors"><a data-path="teams-and-players" href="#">Injury Wire</a></li></ul></div><div><h4 class="font-headline-sm text-headline-sm uppercase tracking-wider text-on-surface mb-space-sm">PuckZone Hub</h4><ul class="space-y-space-xs font-body-sm text-body-sm text-on-surface-variant"><li class="hover:text-primary transition-colors"><a data-path="join-club" href="#">PuckZone VIP</a></li><li class="hover:text-primary transition-colors"><a data-path="news" href="#">Broadcast Channels</a></li><li class="hover:text-primary transition-colors"><a data-path="news" href="#">Official Rulebook</a></li><li class="hover:text-primary transition-colors"><a data-path="news" href="#">Press Releases</a></li></ul></div></div></div><div class="pt-space-lg flex flex-col md:flex-row items-center justify-between gap-space-md"><div class="flex items-center gap-space-md"><span class="font-label-sm text-label-sm text-on-surface-variant uppercase tracking-widest">Official Media Partner Network</span><div class="flex items-center gap-space-sm text-outline"><span class="material-symbols-outlined text-[20px]">sensors</span><span class="material-symbols-outlined text-[20px]">tv</span><span class="material-symbols-outlined text-[20px]">podcasts</span></div></div><div class="flex items-center gap-space-md"><a class="text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">forum</span></a><a class="text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">smart_display</span></a><a class="text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">photo_camera</span></a><a class="text-on-surface-variant hover:text-primary transition-colors" href="#"><span class="material-symbols-outlined text-[20px]">chat</span></a></div><p class="font-body-sm text-body-sm text-on-surface-variant">© 2025 PuckZone Sports Interactive. All ice telemetry &amp; live statistics verified.</p></div></div></footer></body></html>
